@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+body {
+	background-color: #FFD87F;
+	font-family: Arial, Tahoma, sans-serif;
+	color: #000000;
+	margin: 0px;
+}
+
+h1 {
+	color: #FFFFFF;
+}
+
+p {
+	text-indent: 40px;
+}
+
+Header {
+	background-color: #ECA43C;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 5px;
+	width: 100%;
+	margin-left: 0%;
+}
+
+/* FOOTER */
+
+main {
+	width: 70%;
+	background-color: #FDEBD0;
+	float:center;
+	margin: 0% 0% 0% 10%;
+	padding: 2% 5% 1% 5%;
+}
+
+footer {
+	clear:both;
+	background-color: #ECA43C;
+	color: #FFFFFF;
+	text-align: center;
+	margin-left: 10%;
+	height: 10px;
+	font-size: 12pt;
+	width: 80%;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+	color: #000000;
+	padding: 5px;
+	width: 70%;
+	margin-left: 9%;
+	font-weight: bold;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	padding-top: 5px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	display: block;
+	width: 150px;
+	margin-right: 10px;
+	color: #FFFFFF;
+	padding: 4px 4px 4px 4px;
+	text-align: center;
+	background-color: #ECA43C;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color: #FFFFFF;
+	background-color: #9B30FF;
+}
+
+/* IDS */
+
+#container {
+	width: 100%;
+}
+
+#currentPage {
+	background-color: #C27F1C;
+	color: #C2DFFF;
+	height: 25px;
+}	
