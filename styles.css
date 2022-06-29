@@ -24,9 +24,8 @@ Header {
 	margin-left: 0%;
 }
 
-/* FOOTER */
-
 main {
+	border-radius: 25px 25px 25px 25px;
 	width: 70%;
 	background-color: #FDEBD0;
 	float:center;
@@ -39,20 +38,23 @@ footer {
 	background-color: #ECA43C;
 	color: #FFFFFF;
 	text-align: center;
-	margin-left: 10%;
-	height: 10px;
+	margin-left: 12%;
+	height: 8px;
 	font-size: 12pt;
-	width: 80%;
+	width: 76%;
 }
 
 /* NAVIGATION BAR */
 
 nav {
 	color: #000000;
-	padding: 5px;
-	width: 70%;
-	margin-left: 9%;
+	background-color: #ECA43C;
+	padding: 0px;
 	font-weight: bold;
+	margin-left: 12%;
+	height: 8px;
+	font-size: 12pt;
+	width: 76%;
 }
 
 nav ul {
@@ -61,12 +63,13 @@ nav ul {
 
 nav ul li {
 	float: left;
-	padding-top: 5px;
+	padding-top: 7px;
 }
 
 nav ul li a:link, nav ul li a:visited {
+	border-radius: 0px 0px 15px 15px;
 	display: block;
-	width: 150px;
+	width: 90px;
 	margin-right: 10px;
 	color: #FFFFFF;
 	padding: 4px 4px 4px 4px;
@@ -75,12 +78,44 @@ nav ul li a:link, nav ul li a:visited {
 	text-decoration: none;
 }
 
-nav ul li a:hover{
+nav ul li a:hover, #currentPage{ /* NAVIGATION CHANGE 1, added #currentPage so that the current pages tab remains rounder, taller, and darker. */
+	border-radius: 0px 0px 25px 25px;
 	color: #FFFFFF;
 	background-color: #9B30FF;
 }
 
-/* IDS */
+/* TABLES */
+table {
+	margin: 0 auto;
+	width: 80%;
+	background-color: #FDEBD0;
+	border: hidden;
+}
+
+th {
+	background-color: #ECA43C;
+	color: #FFFFFF;
+	padding: 0px 30px 0px 30px;
+}
+
+td {
+	padding: 10px 30px 10px 30px;
+}
+
+/* OTHER */
+ol li p {
+	text-indent: 0px; /* CHANGE 2 Removed the indent from the ol li p because I did not like it having an indent there. */
+}
+
+/* IDS and Classes */
+
+#rightAligned {
+	text-align: right;
+}
+
+.centerAligned {
+	text-align: center;
+}
 
 #container {
 	width: 100%;
