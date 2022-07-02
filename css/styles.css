@@ -1,0 +1,132 @@
+﻿@charset "utf-8";
+
+body {
+	background-color: #FFD87F;
+	font-family: Arial, Tahoma, sans-serif;
+	color: #000000;
+	margin: 0px;
+}
+
+h1 {
+	color: #FFFFFF;
+}
+
+h2{
+	color: #000000;
+	text-align: center;
+}
+
+p {
+	text-indent: 40px;
+}
+
+Header {
+	background-color: #ECA43C;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 5px;
+	width: 100%;
+	margin-left: 0%;
+}
+
+main {
+	border-radius: 25px 25px 25px 25px;
+	width: 70%;
+	background-color: #FDEBD0;
+	float:center;
+	margin: 0% 0% 0% 10%;
+	padding: 2% 5% 1% 5%;
+}
+
+footer {
+	clear:both;
+	background-color: #C78A32;
+	color: #FFFFFF;
+	text-align: center;
+	margin-left: 12%;
+	height: 8px;
+	font-size: 12pt;
+	width: 76%;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+	color: #000000;
+	background-color: #C78A32;
+	padding: 0px;
+	font-weight: bold;
+	margin-left: 12%;
+	height: 8px;
+	font-size: 12pt;
+	width: 76%;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	padding-top: 7px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	border-radius: 0px 0px 10px 10px;
+	display: block;
+	width: 130px;
+	margin-right: 10px;
+	color: #FFFFFF;
+	padding: 4px 4px 4px 4px;
+	text-align: center;
+	background-color: #C78A32;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #FFFFFF;
+	height: 25px;
+	background-color: #9B30FF;
+}
+
+/* TABLES */
+table {
+	margin: 0 auto;
+	width: 80%;
+	background-color: #FDEBD0;
+	border: hidden;
+}
+
+th {
+	background-color: #ECA43C;
+	color: #FFFFFF;
+	padding: 0px 30px 0px 30px;
+}
+
+td {
+	padding: 10px 30px 10px 30px;
+}
+
+/* OTHER */
+ol li p {
+	text-indent: 0px; /* CHANGE 2 Removed the indent from the ol li p because I did not like it having an indent there. */
+}
+
+/* IDS and Classes */
+
+#rightAligned {
+	text-align: right;
+}
+
+.centerAligned {
+	text-align: center;
+}
+
+#container {
+	width: 100%;
+}
+
+#currentPage {
+	background-color: #ECA43C;
+	height: 25px;
+}	

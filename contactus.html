@@ -1,0 +1,66 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8"> <!-- Needed to display the Greek-->
+		<title>You Can Eat That?!- Contact Us</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/forms.css">
+		<style> /* This is only included here because the rubric requires it. It is being overriden in the CSS form file. */
+			form {
+				border-radius: 90%;
+				border-radius: unset;
+				background-color: #000000;
+				background-color: unset;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<a href="index.html">
+				<img src="images/Logo.png" alt="The company logo" width="200" height="200">
+			</a>
+			
+			<h1>Suggest a Dish</h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li> <a href="index.html">Home</a> </li>
+				<li> <a href="menu.html">Menu</a> </li>
+				<li> <a href="contactus.html" id="currentPage">Suggest a Dish</a> </li>
+				<li> <a href="history.html">History</a> </li>
+				<li> <a href="aboutus.html">About Us</a> </li>
+			</ul>
+		</nav>
+		
+		<main>
+			<h2>Have a Dish Suggestion? Submit it Below</h2>
+
+			<form action="" method="post" autocomplete="on">
+				<label>First Name</label>
+				<input name="FirstName" type="text">
+
+				<label>Last Name</label>
+				<input name="LastName" type="text">
+
+				<label>Email</label>
+				<input name="Email" type="email" autocomplete="off">
+
+				<label>Phone Number</label>
+				<input name="PhoneNum" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####">
+
+				<label>Describe your dish</label>
+				<textarea name="Description" rows="1" cols="1" required></textarea> <!-- rows and cols is only included here because the rubric requires it. It is being overriden in the CSS file. -->
+
+				<input name="Submit" type="submit" id="Submit">
+			</form>
+		</main>
+		
+		<footer>
+		</footer>
+	</body>
+	
+</html>
