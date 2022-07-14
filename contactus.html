@@ -8,11 +8,21 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" type="text/css" href="css/forms.css">
 		<style> /* This is only included here because the rubric requires it. It is being overriden in the CSS form file. */
-			form {
-				border-radius: 90%;
-				border-radius: unset;
-				background-color: #000000;
-				background-color: unset;
+			.Check{
+				color: #FFFFFF;
+				background-color: #ECA43C;
+				padding-top: 5px;
+				padding-bottom: 4px;
+				padding-left: 20px;
+				padding-right: 20px;
+				margin: auto;
+				margin-left: 25%;
+				margin-right: 25%;
+				text-align: center;
+				border-style: solid;
+				border-color: #C78A32;
+				border-width: 4px;
+				width: 47%;
 			}
 		</style>
 	</head>
@@ -39,21 +49,59 @@
 		<main>
 			<h2>Have a Dish Suggestion? Submit it Below</h2>
 
-			<form action="" method="post" autocomplete="on">
+			<form name="form" action="" method="post" autocomplete="on">
+				<h3 style="text-align: center;">Verify your PIN</h3>
+					<input name="pinField" type="number" min="1000" max="9999" required>
+					<button onclick="pinVerifyOnClick()" class="Centered"> Verify </button>
+					<p id="pinValidationMessage"></p>
+					<script>
+						function pinVerifyOnClick() {
+							var pinField = document.form.pinField;
+							if(pinField.checkValidity() == false) {
+								document.getElementById("pinValidationMessage").innerHTML = pinField.validationMessage;
+								return false;
+							} else {
+								document.getElementById("pinValidationMessage").innerHTML = "Pin Valid";
+								return true;
+							}
+							
+						}
+					</script>
 				<label>First Name</label>
-				<input name="FirstName" type="text">
+				<input name="FirstName" type="text" required>
 
 				<label>Last Name</label>
-				<input name="LastName" type="text">
+				<input name="LastName" type="text" required>
 
 				<label>Email</label>
-				<input name="Email" type="email" autocomplete="off">
+				<input name="Email" type="email" autocomplete="off" required>
 
 				<label>Phone Number</label>
 				<input name="PhoneNum" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####">
 
 				<label>Describe your dish</label>
 				<textarea name="Description" rows="1" cols="1" required></textarea> <!-- rows and cols is only included here because the rubric requires it. It is being overriden in the CSS file. -->
+				
+				<label> Are you willing to be contacted for further information?</label>
+				<div class="Check">Yes<input name="ContactBack" type="radio" value="Yes">
+				No<input name="ContactBack" type="radio" value="No"></div>
+
+				<label> Contains allergens? </label>
+				<div class="Check"><input name="ContainsAllergens" type="checkbox"> </div> <br>
+
+				<label> Stuff </label>
+				<div class="Check">
+					<select>
+						<option disabled selected value></option>
+						<option value="Option 1">Option 1</option>
+						<option value="Option 2">Option 2</option>
+						<option value="Option 3">Option 3</option>
+					</select>
+				</div>
+
+				<br>
+
+				<input type="reset" style="width: 40%; margin: auto;"> <br>
 
 				<input name="Submit" type="submit" id="Submit">
 			</form>

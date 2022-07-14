@@ -28,6 +28,11 @@ input:focus, textarea:focus{
 	background-color: #FFD87F;
 }
 
+input[type=number] {
+	background-color: #DD7272;
+	border-color: #aA5C5C;
+}
+
 label {
 	border-radius: 8px 8px 0px 0px;
 	color: #FFFFFF;
@@ -40,6 +45,33 @@ label {
 	margin-left: 25%;
 	margin-right: 25%;
 	display: inline;
+}
+
+select {
+	background-color: #C78A32;
+	color: #FFFFFF;
+}
+
+.Check{
+	color: #FFFFFF;
+	background-color: #ECA43C;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: auto;
+	margin-left: 25%;
+	margin-right: 25%;
+	text-align: center;
+	border-style: solid;
+	border-color: #C78A32;
+	border-width: 4px;
+	width: 47%;
+}
+
+.Centered {
+	margin-left: 50%;
+	margin-right: 50%;
 }
 
 #Submit {
